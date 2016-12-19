@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - vetyo@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="vetyo">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="db_test1"/>
+    <schema id="3" name="demo"/>
+    <schema id="4" name="information_schema"/>
+    <schema id="5" name="mysql"/>
+    <schema id="6" name="netgloo_blog"/>
+    <schema id="7" name="new_db"/>
+    <schema id="8" name="performance_schema"/>
+    <schema id="9" name="playground"/>
+    <schema id="10" name="sakila"/>
+    <schema id="11" name="studentdb"/>
+    <schema id="12" name="sys"/>
+    <schema id="13" name="test_db"/>
+    <schema id="14" name="track_db"/>
+    <schema id="15" name="world"/>
+    <table id="16" parent="1" name="student"/>
+    <column id="17" parent="16" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="18" parent="16" name="email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="19" parent="16" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="20" parent="16" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
